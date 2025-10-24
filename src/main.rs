@@ -4,7 +4,9 @@ use std::path::Path;
 
 #[derive(Serialize, Deserialize, Debug)]
 struct IconData {
+    #[serde(rename = "icon_name")]
     name: String,
+    #[serde(rename = "icon_code")]
     icon: String,
 }
 
